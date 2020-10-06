@@ -3,10 +3,26 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/media/homepage_background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #6b6b6b;
+}
+
+.container-fluid {
+    background-color :#00b5c7;
+}
+
+.bg-white {
+    background-color: rgb(243, 156, 105)!important  ;
+}
+
+.page-title {
+    text-decoration: underline!important;
+}
+
+.simple {
+    color: white;
 }
 
 /* from Bulma */
@@ -53,6 +69,16 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #00707a;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
