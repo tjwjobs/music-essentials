@@ -35,12 +35,16 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
+                                <a href="{% url 'product_detail' product.id %}"
                                     <p class="mb-0">{{ product.name }}</p>
+                                </a>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
+                                            <a href="{% url 'product_detail' product.id %}"
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            </a>
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
