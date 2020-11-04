@@ -105,6 +105,11 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.label-color {
+    color: white !important;
+    background-color: rgb(53, 53, 53) !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
