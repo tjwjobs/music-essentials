@@ -1,0 +1,1 @@
+web: gunicorn music-essentials.wsgi:application
