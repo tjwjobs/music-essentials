@@ -1,1 +1,1 @@
-web: gunicorn music-essentials.wsgi:application
+web: gunicorn music_essentials.wsgi:application
