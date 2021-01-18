@@ -119,9 +119,9 @@ WSGI_APPLICATION = 'music_essentials.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-if 'DATABASE_URL' in os.environ:
+if 'HEROKU_POSTGRESQL_CRIMSON_URL' in os.environ:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        'default': dj_database_url.parse(os.environ.get('HEROKU_POSTGRESQL_CRIMSON_URL'))
     }
 else:
     DATABASES = {
@@ -130,7 +130,6 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
